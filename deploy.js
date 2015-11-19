@@ -41,12 +41,7 @@ console.log('Zip creation:')
 console.log('All subdirs: ' + webjobs);
 
 for(var i=0; i<webjobs.length; i++){
-    var files = fs.readdirSync('./' + webjobs[i]);
-    console.log('./' + webjobs[i] + ' files: ' + files);
-    for (var j in files){
-        console.log(files[j])
-        zip.addLocalFile('./' + webjobs[i] + '/' + files[j]);
-    }
+    zip.addLocalFolder('./' + webjobs[i]);
     zip.writeZip(webjobs[i] + '.zip');
     console.log(webjobs[i] + '.zip created');
 }
@@ -70,7 +65,7 @@ for(var i=0; i<webjobs.length; i++) {
             headers: {
                 'Content-Type': 'application/zip',
                 'Host': domain,
-                'Content-Disposition': contentDisposition + conf.main
+                'Content-Disposition': contentDisposition.replace(PLACEHOLDER,conf.main)
             }
         };
 
