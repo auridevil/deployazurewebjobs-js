@@ -14,17 +14,17 @@
 
 <pre>
 /** Connection Configurations */
-var domain = '<WEBSITENAME>.scm.azurewebsites.net';
-var username = '<DEPLOYUSER>';
-var password = '<DEPLOYUSERPASSWORD>';
+var domain = '&lt;WEBSITENAME&gt;.scm.azurewebsites.net';
+var username = '&lt;DEPLOYUSER&gt;';
+var password = '&lt;DEPLOYUSERPASSWORD&gt;';
 
 
 /** WebJobConfigurations */
 
 var jobConfigurations = [
-    {name : '<WEBJOBNAME>', // this is the same name as the folder and as the final zip
-        type: '<triggered/continuous>',
-        main: '<WEBJOB ENTRY POINT e.g. "run.js">'        // file to be executed
+    {name : '&lt;WEBJOBNAME&gt;', // this is the same name as the folder and as the final zip
+        type: '&lt;triggered/continuous&gt;',
+        main: '&lt;WEBJOB ENTRY POINT e.g. "run.js"&gt;'        // file to be executed
     },
 ............
 ];
