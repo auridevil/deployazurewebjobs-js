@@ -30,7 +30,7 @@ var jobConfigurations = [
 ];
 </pre>
 Note:
-<DEPLOYUSER> && <DEPLOYUSERPASSWORD> are the credential you use for git deployment
+&lt;DEPLOYUSER&gt; && &lt;DEPLOYUSERPASSWORD&gt; are the credential you use for git deployment
 The first time the webjob zip need to be uploaded using the azure portal.
 
 Feel free to edit and improve the script.
