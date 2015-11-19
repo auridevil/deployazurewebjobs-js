@@ -29,6 +29,9 @@ var jobConfigurations = [
 ............
 ];
 </pre>
+
+- Run the deploy.js!
+
 Note:
 <p>
 &lt;DEPLOYUSER&gt; && &lt;DEPLOYUSERPASSWORD&gt; are the credential you use for git deployment
